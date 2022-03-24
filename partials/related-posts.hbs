@@ -1,0 +1,18 @@
+<!--
+  Get related posts based on tags
+ -->
+
+{{#get 'posts' limit='2' include='authors,tags' filter='tags:[{{post.tags}}]+id:-{{post.id}}' as |related-posts|}}
+  {{#if related-posts}}
+    <div class='c-related'>
+      <div class='c-title-bar'>
+        <h3 class='c-title-bar__title'>{{t 'You might also like' }}</h3>
+      </div>
+      <div class='o-grid'>
+        {{#foreach posts visibility='all'}}
+          {{> post-card-custom }}
+        {{/foreach}}
+      </div>
+    </div>
+  {{/if}}
+{{/get}}

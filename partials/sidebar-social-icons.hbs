@@ -1,0 +1,38 @@
+<div class='c-widget'>
+  <div class='c-title-bar'>
+    <h3 class='c-title-bar__title'>{{t 'Follow me'}}</h3>
+  </div>
+  <ul class='c-social-icons o-plain-list'>
+    {{#if @site.twitter}}
+      <li class='c-social-icons__item'>
+        <a href='{{ twitter_url }}' aria-label='Twitter' target='_blank' rel='noopener'>
+          <span class='c-social-icons__icon' data-icon='ei-sc-twitter' data-size='s'></span>
+        </a>
+      </li>
+    {{/if}}
+
+    <li class='c-social-icons__item'>
+      <a href='https://www.instagram.com/hackemateninja/' aria-label='Instagram' target='_blank' rel='noopener'>
+        <span class='c-social-icons__icon' data-icon='ei-sc-instagram' data-size='s'></span>
+      </a>
+    </li>
+
+    <li class='c-social-icons__item'>
+      <a href='https://www.linkedin.com/in/hackemate/' aria-label='Pinterest' target='_blank' rel='noopener'>
+        <span class='c-social-icons__icon' data-icon='ei-sc-linkedin' data-size='s'></span>
+      </a>
+    </li>
+
+    <li class='c-social-icons__item'>
+      <a href='https://www.youtube.com/c/hackemateninja' aria-label='YouTube' target='_blank' rel='noopener'>
+        <span class='c-social-icons__icon' data-icon='ei-sc-youtube' data-size='s'></span>
+      </a>
+    </li>
+
+    <li class='c-social-icons__item'>
+      <a href='https://github.com/hackemateninja' aria-label='Github' target='_blank' rel='noopener' title='Github'>
+        <span class='c-social-icons__icon' data-icon='ei-sc-github' data-size='s'></span>
+      </a>
+    </li>
+  </ul>
+</div>

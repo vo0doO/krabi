@@ -1,0 +1,26 @@
+// *----------------------------------*\
+//  Settings > Colors
+// *----------------------------------*/
+
+:root {
+  --color-brand: 	 #3371FF;
+  --color-brand-strong: 	 #051637;
+  --color-white:   #FFFFFF;
+  --color-dark:    #000C2D;
+  --color-dark-gray:    #2b2d38;
+  --color-text:    #dae7ff;
+  --color-gray:    #F2F4F7;
+  --color-error:   #f76707;
+  --color-member:   #E66078;
+  --color-paid:   #F9CC0E;
+  --color-success: #5ed5a1;
+  --color-border:  rgba(0, 0, 0, .05);
+
+  --bg-color:      var(--color-dark);
+  --bg-gray:       var(--color-dark);
+  --bg-dark:       var(--color-dark);
+  --bg-white:      var(--color-brand-strong);
+
+  --color-code-inline: var(--color-text);
+  --bg-tag-list: linear-gradient(to left, var(--bg-color), rgba(255, 255, 255, 0));
+}

@@ -1,0 +1,75 @@
+/*------------------------------------*\
+  Components > Subscribe Form
+\*------------------------------------*/
+
+.c-subscribe {
+  padding: $space-32 $space-24 $space-40;
+  color: var(--color-white);
+  border-radius: $global-border-radius;
+  background-color: var(--color-brand-strong);
+  background-repeat: no-repeat;
+  background-position: right (-$space-80) top (-($space-96 + $space-24));
+
+  &--center {
+    @include mq($from: tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.c-subscribe-form {
+  .c-alert {
+    display: none;
+  }
+
+  .c-btn {
+    width: 100%;
+    line-height: $type-md-lh;
+    @extend .c-btn--loading;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &.loading .c-btn {
+    &:after {
+      display: block;
+    }
+  }
+
+  &.success .c-alert--success,
+  &.invalid .c-alert--invalid,
+  &.error   .c-alert--error  {
+    display: block;
+  }
+}
+
+@include mq($from: tablet) {
+  .c-subscribe-form--compact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .form-group {
+      display: flex;
+    }
+
+    .c-btn {
+      flex: 3;
+      line-height: initial;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .c-subscribe-form__input[type=email] {
+      margin: 0;
+      background-color: var(--color-dark-gray);
+      border-top-right-radius: 0;
+      border-color: var(--color-brand-strong);
+      border-bottom-right-radius: 0;
+    }
+  }
+}
