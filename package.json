@@ -41,11 +41,9 @@
     "sass-mq": "^5.0.1"
   },
   "devDependencies": {
-    "dart-sass": "^1.25.0",
     "gulp": "^4.0.2",
     "gulp-rtlcss": "^1.4.0",
     "gulp-zip": "^5.0.1",
-    "node-sass": "^4.14.1"
   },
   "author": {
     "name": "Aspire Themes",
